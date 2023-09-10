@@ -240,6 +240,8 @@ spider_config = {}
 
 # 用户界面
 root = tk.Tk()
+root.title("天一大联考成绩查询-批量")
+
 
 # 创建选项
 options = products
@@ -356,6 +358,11 @@ progress_bar.pack()
 # 开始按钮
 start_button = tk.Button(text="开始处理", command=start)
 start_button.pack()
+
+# 创建一个文本框
+text_box = tk.Label(root, height=1,text="天一大联考成绩查询系统 chenleqi767")
+text_box.pack()
+
 
 # 显示主界面
 root.mainloop()
